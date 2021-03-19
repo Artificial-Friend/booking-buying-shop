@@ -16,7 +16,7 @@ public class ClientServiceImpl implements ClientService {
 
     @Override
     public void register(Client client) {
-        client.setDiscount((byte) 5);
+        client.setDiscount((byte) 0);
         Cart cart = new Cart();
         cart.setClient(client);
         cartRepository.save(cart);
