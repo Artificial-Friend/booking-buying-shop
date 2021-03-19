@@ -1,0 +1,234 @@
+{
+	"info": {
+		"_postman_id": "d111bf81-5658-422e-b7a2-e49895110cfa",
+		"name": "shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products?name=potato",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "potato"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ordered by chepest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/ordered/by-cheapest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"ordered",
+						"by-cheapest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ordered by most expensive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/ordered/by-cheapest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"ordered",
+						"by-cheapest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ordered by popularity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/ordered/by-popular",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"ordered",
+						"by-popular"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/carts/1/add-product potato 10",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carts/1/add-product?productName=potato&quantity=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carts",
+						"1",
+						"add-product"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "potato"
+						},
+						{
+							"key": "quantity",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/carts/1/add-product pants 1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carts/1/add-product?productName=pants&quantity=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carts",
+						"1",
+						"add-product"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "pants"
+						},
+						{
+							"key": "quantity",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/carts/1/remove-product potato 5",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carts/1/remove-product?productName=potato&quantity=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carts",
+						"1",
+						"remove-product"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "potato"
+						},
+						{
+							"key": "quantity",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/carts/1/remove-product potato 2 Copy",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/carts/1/remove-product?productName=potato&quantity=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carts",
+						"1",
+						"remove-product"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "potato"
+						},
+						{
+							"key": "quantity",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orders/client/1/complete-order",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"client",
+						"1",
+						"complete-order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
