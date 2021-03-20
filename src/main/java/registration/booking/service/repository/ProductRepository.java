@@ -11,8 +11,8 @@ import registration.booking.service.model.Product;
 public interface ProductRepository extends JpaRepository<Product, Long> {
     Optional<Product> findByName(String name);
 
-    @Query(value = "SELECT od.product FROM OrderDetails od "
-            + "JOIN FETCH Product p ON od.product.id = p.id "
-            + "GROUP BY od.product ORDER BY od.quantity DESC")
+    @Query(value = "SELECT p FROM Product p "
+            + "LEFT JOIN FETCH OrderDetails od ON od.product.id = p.id "
+            + "GROUP BY p.id ORDER BY od.quantity DESC")
     List<Product> getOrderedByPopularity();
 }

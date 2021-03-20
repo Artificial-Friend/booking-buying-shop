@@ -27,7 +27,7 @@ PATCH: `/{cartId}/remove-product` to add a product, required parameters `product
 PUT: `/client/{clientId}/complete-order` to complete order, `{clientId}` is required path variable\
 ####  Product(`/products`):\
 GET: `name` parameter to get any product by its name
-GET: `/ordered/by-popular` with no parameter to sort purchased products by popularity
+GET: `/ordered/by-popular` with no parameter to sort products by popularity (purchases)
 GET: `/ordered/by-cheapest` with no parameter to sort purchased products by price from cheapest to the most expensive
 GET: `/ordered/by-most-expensive` with no parameter to sort purchased products by price from the most expensive to cheapest
 
