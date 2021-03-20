@@ -13,7 +13,7 @@
 
 ### If you have a DB
 1. Change `url` in `application.properties`
-2. Add your database dependency in 
+2. Add your database dependency in `pom.xml`
 3. Run project.
 ***
 
